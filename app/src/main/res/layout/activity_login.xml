@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login"
+        android:layout_margin="10dp"
+        android:background="@drawable/bt"
+        android:scaleType="fitXY"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="Login to your account"
+        android:textColor="#ff00"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lg_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Nhập username"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập password"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:id="@+id/lgCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me?"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/lg_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Login"
+            android:backgroundTint="#00FF04"
+            android:layout_margin="10dp"/>
+        <!--        <Button-->
+        <!--            android:id="@+id/lg_singup"-->
+        <!--            android:layout_width="150dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Sing Up"-->
+        <!--            android:backgroundTint="#03A9F4"-->
+        <!--            android:layout_margin="20dp"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/gg1"
+            android:layout_margin="10dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/face"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lgForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/lgSingup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create account!"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="#3EDA14"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
